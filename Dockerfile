@@ -8,8 +8,8 @@ RUN sudo apt -y upgrade m4
 
 WORKDIR /code
 
-COPY ./app/ /code
-RUN sudo npm install esy
+COPY ./app /code
+RUN npm install esy
 RUN npx esy
 
 ENTRYPOINT npx esy start
