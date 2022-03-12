@@ -40,6 +40,8 @@ Resources:
         Statement:
         - Effect: Allow
           Action:
+          - ecr:GetDownloadUrlForLayer
+          - ecr:BatchGetImage
           - ecr:BatchCheckLayerAvailability
           - ecr:InitiateLayerUpload
           - ecr:UploadLayerPart
