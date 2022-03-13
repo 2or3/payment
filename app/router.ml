@@ -11,4 +11,7 @@ let () =
       (fun request ->
         Dream.html (Dream.param request "word"));
 
+    Dream.get "/test/:test"
+      (fun request ->
+        Dream.html (Dream.param request "test"));
   ]
