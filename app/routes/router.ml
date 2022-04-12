@@ -5,7 +5,7 @@ let () =
 
     Dream.get "/"
       (fun _ ->
-        Dream.html "Good morning, world!");
+        Dream.html "Good morning, worlds !");
 
     Dream.get "/echo/:word"
       (fun request ->
